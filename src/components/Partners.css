@@ -1,0 +1,58 @@
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background: #fffaf3;
+}
+
+.section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section .subtext {
+  font-size: 16px;
+  color: #c9a23f;
+  margin-bottom: 5px;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping */
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space between logos */
+}
+
+.partners img {
+  max-width: 150px; /* logo max width */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partners img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .partners img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners img {
+    max-width: 80px;
+    gap: 20px;
+  }
+}
